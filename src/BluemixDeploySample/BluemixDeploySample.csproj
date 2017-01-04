@@ -77,6 +77,6 @@
     <Exec Command="dotnet bundle" />
   </Target>
   <Target Name="AfterPublish">
-    <Exec Command="Scripts\bmix_deploy.cmd $(ProjectName) bin/$(Configuration)/$(TargetFramework)/publish" />
+    <Exec Command="Scripts\bmix_deploy $(ProjectName) bin/Debug/netcoreapp1.0/publish" />
   </Target>
 </Project>
